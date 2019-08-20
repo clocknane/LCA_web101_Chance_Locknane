@@ -1,31 +1,95 @@
-* {
+*            {
     margin: 0;
     padding: 0;
-}
+   }
 
- body {
+   body      {
      width: 100%;
      background-color: #f5f2eb;
-}
+   }
 
- div.headinfo {
+   div.headinfo {
     text-align: center;
     margin: 15px 0px 0px 0px;
     padding-bottom: 10px;
- }
+   }
 
- div.Summary {
+   div.Summary {
     background-color: #999;
     margin: 0px 80px;
- }
+   }
 
- div.Summary h2 {
+   div.Summary h2 {
      margin: 0px 20px;
      font-size: 32px;
- }
+   }
 
- div.Summary article {
+   div.Summary article {
     background-color: #f5f2eb;
-    text-indent: 20px;
-    padding: 5px 0px 0px 0px;
- }
+    justify-items: left;
+    padding: 5px 0px 0px 20px;
+   }
+
+   div.Education {
+    background-color: #999;
+    margin: 20px 80px;
+
+   }
+
+   div.Education h2 {
+    margin: 0px 20px;
+    font-size: 32px;
+   }
+
+   div.Education h3 {
+     font-size: 20px;
+     background-color: #f5f2eb;
+     padding: 5px 0px 0px 20px;
+     float: left;
+     clear: both;
+   }
+
+   h4.Bmgmt {
+     padding: 5px 0;
+     background-color: #f5f2eb;
+   }
+
+   h4.Gen {
+     padding: 4px 0px;
+   }
+
+   div.Education h4 {
+      font-size: 16px;
+      float: right;
+   }
+
+   div.Education article {
+    background-color: #f5f2eb;
+    padding: 5px 0px 0px 20px;
+    float: left;
+    clear: both;
+   }
+
+   div.Employment {
+      background-color: #999;
+      margin: 20px 80px;
+      clear: both;
+      padding: 1px 0px 0px 20px;
+   }
+
+   div.Employment h2 {
+      font-size: 32px;
+      
+   }
+
+   div.Employment h3 {
+      font-size: 20px;
+      background-color: #f5f2eb;
+      padding: 5px 0px 0px 3px;
+      clear: both;
+   }
+
+   div.Employment article {
+      background-color: #f5f2eb;
+      padding: 5px 0px 0px 3px;
+   }
