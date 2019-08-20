@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ body {
+     width: 100%;
+     background-color: #f5f2eb;
+}
+
+ div.headinfo {
+    text-align: center;
+    margin: 15px 0px 0px 0px;
+    padding-bottom: 10px;
+ }
+
+ div.Summary {
+    background-color: #999;
+    margin: 0px 80px;
+ }
+
+ div.Summary h2 {
+     margin: 0px 20px;
+     font-size: 32px;
+ }
+
+ div.Summary article {
+    background-color: #f5f2eb;
+    text-indent: 20px;
+    padding: 5px 0px 0px 0px;
+ }
