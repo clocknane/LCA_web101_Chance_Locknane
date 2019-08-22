@@ -1,0 +1,117 @@
+/*
+These are styles that apply to specific devices used to view your web site using mobile-first media queries.
+
+The min-width: 320px media query isn't included in our textbook example, but as we discussed in class, 
+there are still 320px phones out there and the same styles will apply to the min-width: 576px media 
+query, as well as Retina and other devices.
+
+This project is a quick fix exercise because obviously we can't show more than 4 menu items, and the names
+have been shortened (i.e. Blog instead of My Blog) to make the items fit on one line.
+
+We'll get to javascript soon and update the menu to use the 3-bar icon and an off-canvas menu :)
+*/
+
+/* Extra Small and up (Portrait Phones) */
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+	/*First, decide which nav you want to show, then adjust the other elements */
+	
+	/* Hide the desktop nav*/
+	nav {
+    	visibility: visible;
+		display: flex;
+  	}
+	
+	/* Show the mobile nav */
+	#mobile-nav{
+		visibility: visible;
+		display:flex;
+		justify-content: center;
+  	}
+	
+	/* Change the header to a one-column grid */
+	header {
+    	grid-template-columns: 95%;
+		justify-content: center;
+	}
+	
+	/* Here's where I override the styles.css */
+	#mobile-nav a {   
+    	font-size: 16px;
+    	padding: 10px 18px;
+  }
+	
+	/*Reduce the size of the profile pic*/
+	#profile-pic {
+    	width: 175px;
+    	height: 175px;
+  	} 
+	
+	/* Adjust the grid-template-columns */
+	main {
+        grid-template-columns: 5% 90% 5%;
+	}
+}
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+
+	/* No adjustments needed */
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+	
+	/* Maybe bump up the pic size at this res */
+	#profile-pic {
+    	width: 250px;
+    	height: 250px;
+  	}
+
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+	/* Show the desktop nav and the rest of the styling comes from style.css */
+	nav {
+    	display: flex;
+		visibility:visible;
+	  }
+	  
+	nav a {
+		font-size: 20px;
+		padding: 20px; 
+	}
+	
+	/* Hide the mobile nav  */
+	#mobile-nav {
+		visibility: hidden;
+		display:none;
+  	}
+
+	/* Change the header to a two-column grid*/
+	header {
+    	grid-template-columns: 40% 60%;
+  	}
+  
+  	/* Adjust the grid-template-columns */
+	main {
+        grid-template-columns: 30% 40% 30%;
+	}
+
+	/*Resize the pic */
+	#profile-pic {
+    	width: 300px;
+    	height: 300px;
+	}
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+
+	/* No adjustments needed */
+
+}
