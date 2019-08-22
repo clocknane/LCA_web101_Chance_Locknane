@@ -1,16 +1,3 @@
-/*
-These are styles that apply to specific devices used to view your web site using mobile-first media queries.
-
-The min-width: 320px media query isn't included in our textbook example, but as we discussed in class, 
-there are still 320px phones out there and the same styles will apply to the min-width: 576px media 
-query, as well as Retina and other devices.
-
-This project is a quick fix exercise because obviously we can't show more than 4 menu items, and the names
-have been shortened (i.e. Blog instead of My Blog) to make the items fit on one line.
-
-We'll get to javascript soon and update the menu to use the 3-bar icon and an off-canvas menu :)
-*/
-
 /* Extra Small and up (Portrait Phones) */
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 200px) {
