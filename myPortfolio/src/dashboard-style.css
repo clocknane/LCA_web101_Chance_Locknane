@@ -10,11 +10,16 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background: url(./backgroundimage.jpg)
+}
+
 .greeting {
   position: absolute;
   top: 43%;
   left: 33%;
   font-size: 40px;
+  color: #bbb;
 }
 
 .calculator {
