@@ -239,7 +239,6 @@ button:hover {
   font-weight: 700;
 }
 
-.calendar .date div.number.active,
 .calendar .date div.number:hover {
   background: #009688;
   color: #fff;
