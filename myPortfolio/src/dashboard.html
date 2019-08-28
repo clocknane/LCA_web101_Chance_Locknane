@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="./clock-script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
   <link rel="stylesheet" href="./dashboard-style.css">
   <title>My Dashboard</title>
 </head>
@@ -84,6 +86,17 @@
        <div class="number">30</div>
        <div class="number">31</div>
        </div>    
-     </div>  
+     </div>
+     <div class="todocontainer">
+      <h2>Todo List</h2>
+       <input type="text" placeholder="Add New">
+        <ul>
+         <li>Suit Up<span><i class="fa fa-trash"></i></span></li>
+         <li>Start Batmobile<span><i class="fa fa-trash"></i></span></li>
+         <li>Save Gotham<span><i class="fa fa-trash"></i></span></li>
+         <li>Repeat<span><i class="fa fa-trash"></i></span></li>
+        </ul>
+      </div>
+      <script type="text/javascript" src="todo.js"></script>   
 </body>
 </html>
