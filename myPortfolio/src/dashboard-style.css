@@ -11,11 +11,7 @@ html {
 }
 
 body {
-<<<<<<< HEAD
   background: url(./backgroundimage.jpg);
-=======
-  background: url(./backgroundimage.jpg)
->>>>>>> 3ff202ce36e515ff89e1237a45005cdbaaf8768f
 }
 
 /* Greeting Styling */
@@ -169,20 +165,12 @@ button:hover {
 
 .clock-container {
   width: 100%;
-<<<<<<< HEAD
   height: auto;
-=======
-  height: 1080px;
->>>>>>> 3ff202ce36e515ff89e1237a45005cdbaaf8768f
   position: relative;
 }
 
 #clock {
   width: 100%;
-<<<<<<< HEAD
-=======
-  position: absolute;
->>>>>>> 3ff202ce36e515ff89e1237a45005cdbaaf8768f
   font-size: 4vw;
   color: white;
   text-align: center;
@@ -194,7 +182,6 @@ button:hover {
 
 .calendar {
   width: 300px;
-<<<<<<< HEAD
   height: 440px;
   position: absolute;
   right: 3%;
@@ -224,18 +211,12 @@ button:hover {
 .calendar .image h3 {
   font-weight: 100;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-=======
-  height: auto;
-  background: #fff;
-  box-sizing: border-box;
->>>>>>> 3ff202ce36e515ff89e1237a45005cdbaaf8768f
 }
 
 .calendar .date {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
-<<<<<<< HEAD
   grid-gap: 10px;
   box-sizing: border-box;
 }
@@ -265,7 +246,3 @@ button:hover {
   font-weight: 700;
   cursor: pointer;
 }
-=======
-  color: white;
-}
->>>>>>> 3ff202ce36e515ff89e1237a45005cdbaaf8768f
