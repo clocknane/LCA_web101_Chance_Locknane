@@ -1,23 +1,131 @@
+/* Reset margins and paddings on most elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr 
+{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   width: 850px;
   margin: 0 auto;
 }
 
 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 450px;
-  background-image: url(./nasa-background.jpg);
+  background-image: url(./nasa-background.jpg); 
   color: white;
+}
+
+main h1 {
+  font-size: 4em;
+  letter-spacing: 0.25em;
+  font-family: 'Anton', sans-serif;
 }
 
 section {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-left: 40px;
   height: 324px;
+  background-color: lightgray;
 }
 
-article {
-  width: 270px;
-  height: 324px;
-  background-color: rgb(224, 222, 222);
+article.social-media {
+  width: 270px; 
+  background-color: transparent;
+  font-weight: 700;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.2em;
+}
+
+
+div.social-paragraph {
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  background-color: transparent;
+  letter-spacing: normal;
+}
+
+p {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+article.office-info {
+  width: 270px; 
+  background-color: transparent;
+  font-weight: 700;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.2em;
+}
+
+div.office-paragraph {
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  background-color: transparent;
+  letter-spacing: normal;
+}
+
+article.contact-us {
+  width: 270px; 
+  background-color: transparent;
+  font-weight: 700;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.2em;
+}  
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 200px;
+  margin-top: 25px;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: normal;
+}
+ 
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 200px;
+  margin-top: 2px;
+  margin-right: 30px;
+}
+
+.flex-outer li button {
+  padding: 8px 16px;
+  margin-top: 10px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
 }
