@@ -1,7 +1,7 @@
 /* Mobile style */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-image: url(/img/backgroundimage.jpg);
+  background-image: url(../img/backgroundimage.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
