@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: url(/img/backgroundimage.jpg);
+  background: url(../img/backgroundimage.jpg);
 }
 
 /* Greeting Styling */
@@ -194,7 +194,7 @@ button:hover {
 .calendar .image {
   width: 100%;
   height: 200px;
-  background: url(/img/Calimage.jpg);
+  background: url(../img/Calimage.jpg);
   background-size: cover;
   padding: 20px;
   box-sizing: border-box;
