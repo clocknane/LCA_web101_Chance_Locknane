@@ -229,7 +229,7 @@ ul {
   color: #eece1a; }
 
 .wrapper {
-  margin-top: 2.25rem;
+  margin-top: 1.85rem;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7); }
 
 .wrapper > * {
@@ -278,11 +278,16 @@ ul {
   font-weight: 600; }
 
 .iframe-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.4rem; }
 
-.iframe {
-  grid-column: 1 / span 3; }
+.iframe-container iframe {
+  border: 0;
+  width: 30.84%;
+  height: 620px; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
