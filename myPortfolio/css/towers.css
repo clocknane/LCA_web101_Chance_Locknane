@@ -1,0 +1,70 @@
+/* Styles for Reset and Default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #444;
+}
+
+/* Styles for data-row (container)  */
+[data-row] {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 34px;
+  margin: 25px;
+  border: 1px solid lightgray;
+}
+
+[data-row].red {
+  background-color: #f6c5c5;
+}
+
+[data-row].yellow {
+  background-color: #ffffa9;
+}
+
+[data-row].green {
+  background-color: #baf6ba;
+}
+
+[data-row].blue {
+  background-color: aliceblue;
+}
+
+[data-color] {
+  width: 25px;
+  float: left;
+}
+
+[data-color="blue"] {
+  height: 32px;
+  width: 27px;
+  background-color: blue;
+}
+
+[data-color="green"] {
+  height: 32px;
+  width: 24px;
+  background-color: green;
+}
+
+[data-color="red"] {
+  height: 32px;
+  width: 30px;
+  background-color: red;
+}
+
+[data-color="yellow"] {
+  height: 32px;
+  width: 21px;
+  background-color: yellow;
+}
+
+#announce-game-won {
+  font-size: 50px;
+  text-align: center;
+}
