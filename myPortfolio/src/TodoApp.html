@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/Todo.css" />
+    <script src="../js/todo.js"></script>
+    <title>Chance's To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- Provides Space From Top -->
+      </header>
+      
+        <!-- To Do list Form-->
+    <div id="todos">
+      <div class="header">
+        <h3 style="margin:5px">My To Do List</h3>
+        <input type="text" id="myInput" placeholder="Title..." />
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      <ul id="myUL">
+        <li class="checked">Finish To Do List</li>
+        <li>Go To Work</li>
+        <li>Go To Class</li>
+        <li>Go To Sleep</li>
+      </ul>
+    </div>
+    
+  <script>
+    /* To Do List */
+    // Creating the Close Button
+    var myNodelist = document.getElementsByTagName("LI");
+    var i;
+    for (i = 0; i < myNodelist.length; i++) {
+      var span = document.createElement("SPAN");
+      var txt = document.createTextNode("\u00D7");
+      span.className = "close";
+      span.appendChild(txt);
+      myNodelist[i].appendChild(span);
+    }
+
+    // Hide the List Item
+    var close = document.getElementsByClassName("close");
+    var i;
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      };
+    }
+
+    // Checked Symbol When Clicking on Items
+    var list = document.querySelector("ul");
+    list.addEventListener(
+      "click",
+      function(ev) {
+        if (ev.target.tagName === "LI") {
+          ev.target.classList.toggle("checked");
+        }
+      },
+      false
+    );
+
+    // Create a new list item when clicking on the "Add" button
+    function newElement() {
+      var li = document.createElement("li");
+      var inputValue = document.getElementById("myInput").value;
+      var t = document.createTextNode(inputValue);
+      li.appendChild(t);
+      if (inputValue === "") {
+        alert("You must write something!");
+      } else {
+        document.getElementById("myUL").appendChild(li);
+      }
+      document.getElementById("myInput").value = "";
+
+      var span = document.createElement("SPAN");
+      var txt = document.createTextNode("\u00D7");
+      span.className = "close";
+      span.appendChild(txt);
+      li.appendChild(span);
+
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+          var div = this.parentElement;
+          div.style.display = "none";
+        };
+      }
+    }
+  </script>
+  </body>
+</html>

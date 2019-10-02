@@ -1,14 +1,14 @@
 /* Mobile style */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-image: url(../img/backgroundimage.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center;
 }
 
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 500;
   text-align: center;
@@ -19,15 +19,15 @@ h2 {
   font-size: 24px;
   font-weight: 500;
   padding-top: 20px;
-  text-align:center;
-  color:#fff;
+  text-align: center;
+  color: #fff;
 }
 
 a {
-color:#fff;
+  color: #fff;
 }
 
-header{
+header {
   grid-area: header;
   height: 40px;
 }
@@ -39,58 +39,58 @@ header{
   padding-right: 10px;
 }
 
-main{
+main {
   grid-area: main;
   min-height: calc(100vh - 175px);
-  padding: 20px 6px;  
+  padding: 20px 6px;
 }
 
-nav{
+nav {
   grid-area: nav;
 }
 
-aside{
+aside {
   grid-area: aside;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.container{
-  display:grid;
-  grid-template-areas: 
-  "header"
-  "nav"
-  "main"
-  "aside";
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside";
 }
-.clock{
+.clock {
   width: 80%;
   min-width: 140px;
-  height:65px;
+  height: 65px;
   max-height: 65px;
   border-radius: 5px;
-  color:#fff;
-  font-family: 'Open Sans', sans-serif;
-  font-weight:bold;
-  font-size:26px;
-  padding:50px 2px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  padding: 50px 2px;
   margin: 3px auto;
   text-align: center;
 }
-
 
 #calculator {
   /* display:none; */
   width: 200px;
   padding: 8px 8px 20px 8px;
   margin: 20px auto;
-  background-color: #ABABAB;
+  background-color: #ababab;
   border-radius: 4px;
-  border-top: 2px solid #FFF;
-  border-right: 2px solid #FFF;
-  border-bottom: 2px solid #C1C1C1;
-  border-left: 2px solid #C1C1C1;
-  box-shadow: -3px 3px 7px rgba(0, 0, 0, .6), inset -100px 0px 100px rgba(255, 255, 255, .5);
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #c1c1c1;
+  border-left: 2px solid #c1c1c1;
+  box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.6),
+    inset -100px 0px 100px rgba(255, 255, 255, 0.5);
 }
 
 #display {
@@ -100,12 +100,13 @@ aside{
   width: 174px;
   padding: 0 10px;
   border-radius: 4px;
-  border-top: 2px solid #C1C1C1;
-  border-right: 2px solid #C1C1C1;
-  border-bottom: 2px solid #FFF;
-  border-left: 2px solid #FFF;
-  background-color: #FFF;
-  box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(150, 150, 150, .2);
+  border-top: 2px solid #c1c1c1;
+  border-right: 2px solid #c1c1c1;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  background-color: #fff;
+  box-shadow: inset 0px 0px 10px #030303,
+    inset 0px -20px 1px rgba(150, 150, 150, 0.2);
   font-size: 28px;
   color: #666;
   text-align: right;
@@ -120,20 +121,19 @@ aside{
   font-size: 16px;
   font-weight: bold;
   border-radius: 4px;
-  }
-
-#clearButton {
-  color: #FFF;
-  background-color: #D20000;
-  border-top: 2px solid #FF8484;
-  border-right: 2px solid #FF8484;
-  border-bottom: 2px solid #800000;
-  border-left: 2px solid #800000;
-  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #B00000;
 }
 
+#clearButton {
+  color: #fff;
+  background-color: #d20000;
+  border-top: 2px solid #ff8484;
+  border-right: 2px solid #ff8484;
+  border-bottom: 2px solid #800000;
+  border-left: 2px solid #800000;
+  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #b00000;
+}
 
-#gd-calendar{
+#gd-calendar {
   display: grid;
   grid-template-rows: repeat(7, 1fr);
   grid-gap: 5px;
@@ -142,68 +142,67 @@ aside{
   padding: 10px;
   border-radius: 5px;
   border: 2px solid #fff;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
   background-color: #000;
 }
 
-#gd-calendar-year{
+#gd-calendar-year {
   font-size: 25px;
   font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
   color: #bb0000;
-  text-align:center;
+  text-align: center;
   font-weight: bold;
-  grid-column: 1/ span 7;
+  grid-column: 1 / span 7;
 }
 
-.gd-calendar-week{
+.gd-calendar-week {
   margin-top: 10px;
   font-size: 12px;
-  font-weight: 300;  
-  color: #fff;  
+  font-weight: 300;
+  color: #fff;
 }
 
-.gd-calendar-date{
+.gd-calendar-date {
   font-size: 16px;
   font-weight: bold;
   /* border: 1px solid #000; */
   color: #fff;
 }
 
-.otherMonth{
+.otherMonth {
   color: #c0c0c0;
   font-weight: 100;
 }
 
-
-#gd_calculator{
-  display:grid;
-  width:250px;
+#gd_calculator {
+  display: grid;
+  width: 250px;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
   grid-auto-rows: minmax(35px, auto);
-  padding: 15px 15px 15px 10px; 
+  padding: 15px 15px 15px 10px;
   border-radius: 4px;
-  border-top: 2px solid #C1C1C1;
-  border-right: 2px solid #C1C1C1;
-  border-bottom: 2px solid #FFF;
-  border-left: 2px solid #FFF;
+  border-top: 2px solid #c1c1c1;
+  border-right: 2px solid #c1c1c1;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
   background-color: #333;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
 }
 
-#gd_display{
-  grid-column: 1/ span 4;
+#gd_display {
+  grid-column: 1 / span 4;
   border-radius: 4px;
-  border-top: 2px solid #C1C1C1;
-  border-right: 2px solid #C1C1C1;
-  border-bottom: 2px solid #FFF;
-  border-left: 2px solid #FFF;
-  background-color: #FFF;
+  border-top: 2px solid #c1c1c1;
+  border-right: 2px solid #c1c1c1;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  background-color: #fff;
   font-size: 28px;
   color: #666;
   text-align: right;
@@ -211,28 +210,28 @@ aside{
   padding: 0 10px;
 }
 
-.gd-button{
+.gd-button {
   width: 40px;
   height: 40px;
   font-size: 16px;
   font-weight: bold;
   border-radius: 4px;
-  margin:5px;
+  margin: 5px;
 }
 
-.gd-digits{
+.gd-digits {
   color: #181818;
-  text-shadow: 1px 1px 0px #FFF;
-  background-color: #EBEBEB;
-  border-top: 2px solid #FFF;
-  border-right: 2px solid #FFF;
-  border-bottom: 2px solid #C1C1C1;
-  border-left: 2px solid #C1C1C1;
+  text-shadow: 1px 1px 0px #fff;
+  background-color: #ebebeb;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #c1c1c1;
+  border-left: 2px solid #c1c1c1;
   border-radius: 4px;
 }
 
-.gd-mathButtons{
-  color:#fff;
+.gd-mathButtons {
+  color: #fff;
   background-color: #000044;
   border-top: 2px solid #fff;
   border-right: 2px solid #fff;
@@ -263,7 +262,7 @@ ul li {
   font-size: 18px;
   transition: 0.2s;
 
-/* make the list items unselectable */
+  /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -285,7 +284,7 @@ ul li.checked {
 
 /* Add a "checked" mark when clicked on */
 ul li.checked::before {
-  content: '';
+  content: "";
   position: absolute;
   border-color: #fff;
   border-style: solid;
@@ -322,7 +321,7 @@ ul li.checked::before {
 /* Input Styles */
 input {
   margin: 0;
-/*border: none;
+  /*border: none;
 border-radius: 0;*/
   width: 75%;
   padding: 10px;
@@ -365,59 +364,58 @@ border-radius: 0;*/
   text-decoration: none;
 }
 
-
 /* Media Queries */
-@media(min-width:320px){
-  .container{
+@media (min-width: 320px) {
+  .container {
     grid-template-columns: 1fr;
     grid-template-areas:
-    "main"
-    "nav"
-    "aside";
-  } 
+      "main"
+      "nav"
+      "aside";
+  }
 
-  nav ul{
+  nav ul {
     display: flex;
     flex-direction: column;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     margin-right: 20px;
   }
 
   main {
-      padding: 10px;
-    }
+    padding: 10px;
+  }
 }
 
-@media(min-width:768px){
-  .container{
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: 
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
       "main main"
       "nav aside";
   }
   nav ul {
-      flex-direction: column;
-    }
+    flex-direction: column;
+  }
 
-  main{
-      font-size: 20px;
-      color: #fff;
+  main {
+    font-size: 20px;
+    color: #fff;
   }
 }
 
-@media(min-width:1024px){
-  .container{
-      grid-template-columns: 1fr 4fr 1fr;
-      grid-template-areas: 
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
       "header header header"
       "nav main aside";
   }
   nav ul {
-      flex-direction: column;
-    }
+    flex-direction: column;
+  }
 
-  main{
-      font-size: 20px;
-      color: #fff;
+  main {
+    font-size: 20px;
+    color: #fff;
   }
 }
