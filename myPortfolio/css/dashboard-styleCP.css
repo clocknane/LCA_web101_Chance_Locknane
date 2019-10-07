@@ -254,8 +254,6 @@ aside {
   box-sizing: border-box;
 }
 
-/* Remove margins and padding */
-
 /* List Item Styling */
 ul li {
   cursor: pointer;
@@ -354,7 +352,6 @@ border-radius: 0;*/
 /* End To Do List Styles */
 
 /* Geo-Location Button & Paragraph Styling */
-
 nav .geo-button {
   display: flex;
   margin-left: 6rem;
@@ -374,7 +371,6 @@ nav .geo-button {
 }
 
 /* Geo-Location Paragraph To Display Coordinates */
-
 #my-coords {
   color: #fff;
   margin-left: 2.5px;
@@ -383,7 +379,6 @@ nav .geo-button {
 }
 
 /* Wireframe Link Styling */
-
 .wireframe {
   padding-top: 2rem;
   text-align: center;
