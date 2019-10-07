@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/clock.js"></script>
     <link rel="stylesheet" href="../css/reset.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap"
@@ -13,51 +19,33 @@
     <script src="../js/geoLocation.js"></script>
     <script>
       /* Display Date and Time */
-      function display_date(id) {
-        var now = new Date();
-        var year = now.getFullYear();
+      function realtimeClock() {
+        var rtClock = new Date();
 
-        var months = [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July",
-          "August",
-          "September",
-          "October",
-          "November",
-          "December"
-        ];
-        var month = months[now.getMonth()];
+        var hours = rtClock.getHours();
+        var minutes = rtClock.getMinutes();
+        var seconds = rtClock.getSeconds();
 
-        var day = now.getDate();
-        var hours = now.getHours();
-        var ampm = hours >= 12 ? "PM" : "AM";
-        hours = hours % 12;
-        hours = hours ? hours : 12; // the hour '0' should be '12'
-        var minutes = now.getMinutes();
-        var display_board = document.getElementById(id);
-        display_board.innerHTML =
-          month +
-          " " +
-          day +
-          ", " +
-          year +
-          "<br/>" +
-          hours +
-          ":" +
-          minutes +
-          " " +
-          ampm;
-        setTimeout("display_date('" + id + "')", "1000");
+        // Add AM and PM System
+        var amPm = hours < 12 ? "AM" : "PM";
+
+        // Convert the Hours Component to 12-Hour Format
+        hours = hours > 12 ? hours - 12 : hours;
+
+        // Pad the Hours, Minutes, and Seconds with Leading Zeros
+        hours = ("0" + hours).slice(-2);
+        minutes = ("0" + minutes).slice(-2);
+        seconds = ("0" + seconds).slice(-2);
+
+        // Display the Clock
+        document.getElementById("clock").innerHTML =
+          hours + " : " + minutes + " : " + seconds + " " + amPm;
+        var t = setTimeout(realtimeClock, 500);
       }
     </script>
     <title>Chance's Dashboard</title>
   </head>
-  <body onload="display_date('clock_board')">
+  <body onload="realtimeClock()">
     <div class="container">
       <header>
         <!-- Provides Space From Top -->
@@ -111,8 +99,8 @@
         <h2>
           A pessimist sees the challenge in opportunity, but an optimist sees
           the opportunity in a challenge
+          <div id="clock"></div>
         </h2>
-        <section id="clock_board" class="clock"></section>
         <div class="wireframe">
           <a class="pcwf" href="../img/wfWidescreenPC.JPG"
             >PC Widescreen Wifreframe</a

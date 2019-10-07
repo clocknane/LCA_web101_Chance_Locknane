@@ -63,18 +63,16 @@ aside {
     "main"
     "aside";
 }
-.clock {
-  width: 80%;
+#clock {
   min-width: 140px;
   height: 65px;
   max-height: 65px;
-  border-radius: 5px;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 36px;
   padding: 50px 2px;
-  margin: 3px auto;
+  margin: auto;
   text-align: center;
 }
 
