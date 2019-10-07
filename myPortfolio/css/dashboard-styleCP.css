@@ -183,6 +183,7 @@ aside {
 #gd-calendar div.gd-calendar-date:hover {
   background: #bb0000;
   font-weight: 700;
+  cursor: pointer;
 }
 
 #gd_calculator {
