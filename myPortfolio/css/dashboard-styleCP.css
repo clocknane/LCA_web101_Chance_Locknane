@@ -255,10 +255,6 @@ aside {
 }
 
 /* Remove margins and padding */
-ul {
-  margin: 0;
-  padding: 0;
-}
 
 /* List Item Styling */
 ul li {
@@ -360,6 +356,7 @@ border-radius: 0;*/
 /* Geo-Location Button & Paragraph Styling */
 
 nav .geo-button {
+  display: flex;
   margin-left: 6rem;
   margin-top: 10rem;
   background: #333;
@@ -388,7 +385,7 @@ nav .geo-button {
 /* Wireframe Link Styling */
 
 .wireframe {
-  padding-top: 4rem;
+  padding-top: 2rem;
   text-align: center;
 }
 
@@ -401,11 +398,55 @@ nav .geo-button {
   text-decoration: none;
 }
 
+/* jQuery Click Game Styling */
+#board {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.column {
+  width: 50px;
+  height: 250px;
+  background-color: #222;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.disc {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.white {
+  background-color: white;
+}
+
+.row {
+  clear: both;
+}
+
+#announce-winner {
+  clear: both;
+  font-size: 50px;
+}
+
 /* Media Queries */
 @media (min-width: 320px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-areas:
+      "main"
       "main"
       "nav"
       "aside";
@@ -420,12 +461,11 @@ nav .geo-button {
 
   main {
     padding: 10px;
+    font-size: 14px;
   }
 
   nav .geo-button {
-    margin-left: 90px;
-    margin-top: 160px;
-    margin-bottom: 64px;
+    margin: auto;
     background: #333;
     box-shadow: 2px 2px 10px #999;
     border: none;
@@ -437,6 +477,11 @@ nav .geo-button {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     border-radius: 8px;
+  }
+
+  .wireframe {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -457,7 +502,7 @@ nav .geo-button {
   }
 
   nav .geo-button {
-    margin-top: 10rem;
+    margin: auto;
     background: #333;
     box-shadow: -2px 2px 5px #999;
     border: none;
@@ -469,6 +514,11 @@ nav .geo-button {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     border-radius: 8px;
+  }
+
+  .wireframe {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -489,6 +539,7 @@ nav .geo-button {
   }
 
   nav .geo-button {
+    margin: 8rem auto;
     background: #333;
     box-shadow: 2px 2px 10px #999;
     border: none;
@@ -500,5 +551,10 @@ nav .geo-button {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     border-radius: 8px;
+  }
+
+  .wireframe {
+    display: flex;
+    flex-direction: column;
   }
 }
