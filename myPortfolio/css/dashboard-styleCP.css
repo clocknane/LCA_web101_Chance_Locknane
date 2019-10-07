@@ -175,6 +175,16 @@ aside {
   font-weight: 100;
 }
 
+#gd-calendar div.gd-calendar-date {
+  text-align: center;
+  padding-top: 2px;
+}
+
+#gd-calendar div.gd-calendar-date:hover {
+  background: #bb0000;
+  font-weight: 700;
+}
+
 #gd_calculator {
   display: grid;
   width: 250px;
